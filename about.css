@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/* reset default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #F4F4F4;
+}
+
+/* Header */
+/* Start */
+.header {
+  display: block;
+  width: 100%;
+  height: 60px;
+  text-align: right;
+  background-color: #1F3B4D;  
+}
+
+.header > input, 
+.header > label {
+  display: none;
+}
+
+h1{
+  position: absolute;
+  z-index: 10;
+  top: 13px;
+  left: 10px;
+  color: white;
+  font-size: 160%;
+  font-family: sans-serif;
+}
+
+.header > .nav {
+  display: inline-block;
+  width: 100%;
+  padding: 16px;
+}
+
+.header > .nav > .pages{
+  display: inline-block;
+  width: 68%;
+  text-align: right;
+}
+
+.header > .nav > .pages > li {
+  display: inline-block;
+  padding: 0 4px;
+}
+
+.header > .nav > .pages > li > a {
+  color: white;
+  font-family: sans-serif;
+  font-size: 100%;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* Header */
+/* End */
+
+
+/* About Me */
+/* Start */
+.about_me p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1em;
+  width: 100%;
+  margin-left: 20px;
+}
+.about_me h2 {
+  font-size: 30px;
+  margin: 5px 0 5px 20px;
+}
+
+.container {
+  display: flex;
+} 
+.about_me .img img {
+  width: 45%; 
+  flex-shrink: 0;
+  flex: auto;
+}
+
+#a {
+  margin-left: 20px;
+}
+
+.about_me .info {
+  flex: 0 0 60%;
+}
+
+.about_me .bottom img {
+  width: 33%;
+  height: auto;
+}
+/* About Me */
+/* End */
+
+
+
+/* Contact Information */
+/* Start */
+
+.contact h2 {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.contact a {
+  display: block;
+  margin: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #444;
+}
+
+#c {
+  margin-bottom: 20px;
+}
+
+/* Contact Information */
+/* End */
+
+@media (max-width: 700px) {
+  
+  /* Header */
+  /* Start */
+  .header > #nav + label + .nav{
+    display: none;
+    width: 250px;
+    padding: 16px;
+    background-color: lightgrey;
+  }
+
+  .header > #nav:checked + label + .nav{
+    display: block;
+  }
+
+  .header > .nav > .pages {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .header > .nav > .pages > li {
+    display: block;
+    margin: 16px 4px 0 12px;
+    font-size: 130%;
+  }  
+    
+  .header > .nav {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    z-index: 100;
+    text-align: left;
+  }   
+
+  .header > label {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    padding: 16px;
+    color: white;
+  }
+
+  .header > .nav > .pages > li > a {
+    color: black;
+  }
+  /* Header */
+  /* End */
+
+  .container {
+    display: inline-block;
+  }
+  
+  .bottom {
+    display: none;
+  }
+  
+}
